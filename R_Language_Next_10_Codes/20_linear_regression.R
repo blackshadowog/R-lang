@@ -1,0 +1,7 @@
+hours <- c(1,2,3,4,5,6,7,8)
+marks <- c(35,40,48,55,61,68,75,82)
+model <- lm(marks ~ hours)
+print(summary(model))
+cat("Prediction for 9 hours:", predict(model, data.frame(hours=9)), "\n")
+plot(hours, marks, pch=19, main="Study Hours vs Marks", xlab="Hours", ylab="Marks")
+abline(model)
