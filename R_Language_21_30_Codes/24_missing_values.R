@@ -1,0 +1,5 @@
+x <- c(10,20,NA,40,NA,60)
+cat("Missing:",sum(is.na(x)),"\n")
+cat("Mean:",mean(x,na.rm=TRUE),"\n")
+x[is.na(x)] <- mean(x,na.rm=TRUE)
+print(x)
