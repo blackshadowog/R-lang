@@ -1,0 +1,5 @@
+hours <- c(1,2,3,4,5,6,7,8,9,10)
+passed <- c(0,0,0,0,1,1,1,1,1,1)
+model <- glm(passed~hours,family=binomial)
+print(summary(model))
+cat("Probability:",predict(model,data.frame(hours=6),type="response"),"\n")
