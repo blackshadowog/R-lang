@@ -1,0 +1,1 @@
+sales<-c(120,135,128,145,160,155,170,180,175,190,205,210); ts_sales<-ts(sales,frequency=12); print(ts_sales); plot(ts_sales,main="Monthly Sales",ylab="Sales",xlab="Month")

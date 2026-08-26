@@ -1,0 +1,1 @@
+data<-data.frame(StudyHours=c(2,4,5,6,8,9),Sleep=c(7,6,8,7,6,7),Marks=c(55,65,70,76,88,92)); print(cor(data)); pairs(data,main="Correlation Plot")

@@ -1,0 +1,1 @@
+sales<-data.frame(Month=c("Jan","Feb","Mar","Apr","May","Jun"),Revenue=c(45000,52000,48000,61000,70000,68000)); cat("Total:",sum(sales$Revenue),"\nAverage:",mean(sales$Revenue),"\nBest Month:",sales$Month[which.max(sales$Revenue)],"\n"); barplot(sales$Revenue,names.arg=sales$Month,main="Monthly Revenue",xlab="Month",ylab="Revenue")

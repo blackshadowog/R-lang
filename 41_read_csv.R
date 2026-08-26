@@ -1,0 +1,1 @@
+data<-read.csv("students.csv"); print(data); cat("Average:",mean(data$Marks,na.rm=TRUE),"\n")

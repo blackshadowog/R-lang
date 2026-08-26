@@ -1,0 +1,1 @@
+experience<-1:8; salary<-c(25000,30000,35000,42000,48000,55000,62000,70000); model<-lm(salary~experience); print(summary(model)); print(predict(model,data.frame(experience=c(9,10))))

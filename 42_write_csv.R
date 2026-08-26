@@ -1,0 +1,1 @@
+students<-data.frame(Name=c("Aman","Riya","Rahul"),Marks=c(85,92,78)); write.csv(students,"students_output.csv",row.names=FALSE); print(students)
