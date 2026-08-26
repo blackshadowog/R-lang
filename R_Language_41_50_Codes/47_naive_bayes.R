@@ -1,0 +1,1 @@
+library(e1071); data<-data.frame(Hours=1:8,Result=factor(c("Fail","Fail","Fail","Pass","Pass","Pass","Pass","Pass"))); model<-naiveBayes(Result~Hours,data=data); print(predict(model,data.frame(Hours=c(2,6,9))))

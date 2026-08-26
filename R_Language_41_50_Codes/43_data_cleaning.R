@@ -1,0 +1,1 @@
+data<-data.frame(Name=c("Aman","Riya","Rahul","Neha"),Age=c(20,NA,21,20),Marks=c(85,92,NA,88)); data$Age[is.na(data$Age)]<-mean(data$Age,na.rm=TRUE); data$Marks[is.na(data$Marks)]<-mean(data$Marks,na.rm=TRUE); print(data)
