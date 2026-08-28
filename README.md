@@ -1,26 +1,20 @@
-# R Language Chapters 50–60
+# R Language Chapters 61-70
 
-This folder contains R practice programs from Chapter 50 through Chapter 60.
+61. dplyr Basics
+62. filter() and select()
+63. mutate() and arrange()
+64. group_by() and summarise()
+65. dplyr Pipeline
+66. Data Joins
+67. tidyr Pivot / Reshaping
+68. tidyr Missing Data
+69. ggplot2 Basics
+70. Mini Data Analysis Project
 
-## Topics
-50. Data Frames
-51. Data Frame Operations
-52. Apply Family
-53. Functions
-54. Control Flow
-55. Missing Values
-56. Data Cleaning
-57. Descriptive Statistics
-58. Correlation & Linear Regression
-59. Data Visualization
-60. Mini Data Analysis Project
+Install packages once:
+install.packages("dplyr")
+install.packages("tidyr")
+install.packages("ggplot2")
 
-## How to Run
-Open any `.R` file in RStudio or run it from the R console.
-
-Example:
-```r
-source("50_data_frames.R")
-```
-
-The final chapter combines data handling, statistics, calculations, and visualization into a small end-to-end project.
+Run a file with:
+source("61_dplyr_basics.R")
