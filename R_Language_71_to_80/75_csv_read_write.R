@@ -1,0 +1,5 @@
+sales <- data.frame(product=c("Laptop","Phone","Tablet","Monitor"),sales=c(65000,30000,22000,18000),quantity=c(5,10,8,6))
+write.csv(sales,"sales_data.csv",row.names=FALSE)
+loaded <- read.csv("sales_data.csv")
+print(loaded)
+print(summary(loaded))

@@ -1,0 +1,8 @@
+# Install once: install.packages("readxl"); install.packages("writexl")
+library(readxl)
+library(writexl)
+employees <- data.frame(id=1:5,name=c("Aman","Riya","Karan","Neha","Vikas"),salary=c(45000,52000,65000,48000,70000))
+write_xlsx(employees,"employees.xlsx")
+loaded <- read_excel("employees.xlsx")
+print(loaded)
+print(loaded[loaded$salary>50000,])
