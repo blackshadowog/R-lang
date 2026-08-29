@@ -1,0 +1,8 @@
+# Install once: install.packages("jsonlite")
+library(jsonlite)
+employees <- list(list(id=1,name="Aman",department="IT",salary=45000),list(id=2,name="Riya",department="HR",salary=52000),list(id=3,name="Karan",department="IT",salary=65000))
+json_data <- toJSON(employees,pretty=TRUE)
+writeLines(json_data,"employees.json")
+print(json_data)
+loaded <- fromJSON("employees.json")
+print(loaded)

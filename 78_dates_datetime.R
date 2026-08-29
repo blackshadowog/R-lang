@@ -1,0 +1,8 @@
+today <- Sys.Date()
+print(today)
+print(Sys.time())
+start <- as.Date("2026-01-01")
+end <- as.Date("2026-08-29")
+print(end-start)
+print(format(today,"%d-%m-%Y"))
+print(seq(as.Date("2026-01-01"),as.Date("2026-01-10"),by="day"))

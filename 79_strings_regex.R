@@ -1,0 +1,8 @@
+names <- c("Aman Kumar","Riya Sharma","Karan Singh")
+print(toupper(names))
+print(tolower(names))
+print(nchar(names))
+print(paste("Abhishek","Tiwari"))
+emails <- c("aman@gmail.com","riya@example.com","invalid-email","karan@yahoo.com")
+valid <- grepl("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}$",emails)
+print(data.frame(email=emails,valid=valid))
