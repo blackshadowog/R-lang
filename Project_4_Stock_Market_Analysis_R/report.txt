@@ -1,0 +1,25 @@
+PROJECT 4: STOCK MARKET ANALYSIS
+
+1. Introduction
+This project analyzes historical stock-market data using R.
+
+2. Objectives
+- Download historical stock prices.
+- Calculate daily returns.
+- Calculate 20-day and 50-day moving averages.
+- Display price and return charts.
+- Generate summary statistics.
+
+3. Methodology
+The quantmod package is used to retrieve stock data from Yahoo Finance. The data is converted into a data frame, after which returns and moving averages are calculated using dplyr and zoo.
+
+4. Output
+The program produces:
+- Closing price chart
+- Moving average chart
+- Daily return chart
+- CSV file containing processed data
+- CSV file containing summary statistics
+
+5. Conclusion
+R provides an efficient way to collect, process, visualize, and summarize stock-market data. Moving averages help identify trends, while daily returns provide a basic measure of performance and volatility.
